@@ -23,8 +23,8 @@
 		}
 		&__button {
 			display: inline-block;
-			background: rgba(34, 175, 235, 0.15);
-			border: 2px solid #22AFEB;
+			background: rgba(235, 94, 34, 0.15);
+			border: 2px solid #EB5E22;
 			font-family: Montserrat;
 			font-style: normal;
 			font-weight: bold;
@@ -37,9 +37,9 @@
 				opacity: 0.9;
 			}
 			&:hover {
-				background: rgba(34, 175, 235, 0.5);
-				border: 2px solid rgba(34, 175, 235, 0.5);
-				box-shadow: 0 0 5px rgba(34, 175, 235, 0.5);
+				background: rgba(235, 94, 34, 0.5);
+				border: 2px solid rgba(235, 94, 34, 0.5);
+				box-shadow: 0 0 5px rgba(235, 94, 34, 0.5);
 				span {
 					opacity: 1;
 				}
