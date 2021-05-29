@@ -1,0 +1,36 @@
+.img {
+	display: block;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.button {
+	display: block;
+	cursor: pointer;
+}
+
+.body {
+	&__wrapper {
+		padding: 0 315px;
+	}
+}
+.title {
+	margin-top: 50px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	letter-spacing: -1px;
+	color: #113E52;
+}
+.grey-line:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: -315px;
+	width: calc(100% + 630px);
+	height: 1px;
+	background: linear-gradient(90deg, rgba(17, 62, 82, 0) 0%, rgba(17, 62, 82, 0.05) 20.83%, rgba(17, 62, 82, 0.05) 50%, rgba(17, 62, 82, 0.05) 78.13%, rgba(17, 62, 82, 0) 100%);
+}
