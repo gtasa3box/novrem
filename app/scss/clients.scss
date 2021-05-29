@@ -1,0 +1,39 @@
+.clients {
+	position: relative;
+	padding-bottom: 115px;
+	&__title {
+		margin-bottom: 50px;
+	}
+	&__slider {
+		.img{
+			max-width: 267px;
+		}
+		.card {
+			width: 300px;
+			height: 340px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			border: 1px solid rgba(13, 52, 78, 0.85);
+			&__info {
+			}
+			&__button {
+				background: #079CFF;
+				color: white;
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 22px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-transform: uppercase;
+				color: #FFFFFF;
+				width: 206px;
+				height: 45px;
+			}
+		}
+	}
+}

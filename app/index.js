@@ -5,7 +5,7 @@ $('.main-slider').slick({
 	infinite: true,
 	speed: 300,
 	slidesToShow: 4,
-	slidesToScroll: 2,
+	slidesToScroll: 3,
 	responsive: [
 	{
 	  breakpoint: 1024,

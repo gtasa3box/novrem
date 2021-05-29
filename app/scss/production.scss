@@ -1,0 +1,57 @@
+.production {
+	position: relative;
+	padding-bottom: 115px;
+	&__title {
+		margin-bottom: 50px;
+	}
+	&__slider {
+		img{
+			width: 300px;
+			height: 250px;
+		}
+		.top-card {
+			margin-bottom: 30px;
+		}
+		.card {
+			width: 300px;
+			height: 250px;
+			transition: 0.3s ease;
+			backface-visibility: hidden;
+			&:hover {
+			transform: scale(0.98);
+			}
+			&__info {
+				width: 300px;
+				height: 102px;
+				background: linear-gradient(180deg, rgba(169, 215, 245, 0) 0%, rgba(55, 92, 116, 0.6) 34.9%, rgba(23, 54, 73, 0.9) 100%);
+				z-index: 2;
+				position: absolute;
+				bottom:0;
+				display: flex;
+				&:before {
+					content: '';
+					position: absolute;
+					bottom:0;
+					background: #22AFEB;
+					height: 5px;
+					width: 100%;
+				}
+			}
+			&__title {
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 22px;
+				color: #FFFFFF;
+				text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.35);
+				width: 300px;
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 20px;
+				display: flex;
+				align-items:center;
+			}
+		}
+	}
+}

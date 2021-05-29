@@ -1,5 +1,6 @@
 .works {
-	padding-bottom: 62px;
+	position:relative;
+	padding-bottom: 115px;
 	&__title {
 		margin-bottom: 50px;
 	}
@@ -38,7 +39,7 @@
 				color: #FFFFFF;
 				text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
 				width: 260px;
-				padding-left: 15px;
+				padding-left: 13px;
 				display: flex;
 				align-items:center;
 			}
