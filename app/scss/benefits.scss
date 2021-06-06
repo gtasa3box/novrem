@@ -2,7 +2,7 @@
 	width: 100%;
 	position: relative;
 	flex-wrap: wrap;
-	padding-bottom: 64px;
+	padding:0 315px 64px;
 	display: flex;
 	justify-content: center;
 	&__title {
@@ -33,15 +33,6 @@
 			line-height: 18px;
 			color: #5B5B5B;
 			margin-top: 10px;
-		}
-		&:not(:last-child):before {
-			content: '';
-			position:absolute;
-			width: 2px;
-			height: 95px;
-			background: rgba(80, 136, 168, 0.1);
-			transform: rotate(25deg);
-			right: -25%;
 		}
 	}
 }

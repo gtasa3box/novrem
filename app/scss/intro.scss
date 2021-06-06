@@ -1,5 +1,5 @@
 .intro {
-	padding: 182px 0 277px;
+	padding: 152px 315px 209px;
 	color: white;
 	.content {
 		&__title {
@@ -8,38 +8,40 @@
 			font-weight: bold;
 			font-size: 48px;
 			line-height: 59px;
-			letter-spacing: -0.02em;
 			width: fit-content;
 		}
 		&__text {
-			font-family: Roboto Slab;
+			font-family: Montserrat;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 30px;
-			line-height: 40px;
-			color: rgba(255, 255, 255, 0.95);
-			max-width: 573px;
-			margin: 12px 0 54px;
+			font-size: 24px;
+			line-height: 140%;
+			color: rgba(255, 255, 255, 1);
+			max-width: 847px;
+			margin: 10px 0 42px;
+			span {
+				font-weight: bold;
+			}
 		}
 		&__button {
 			display: inline-block;
-			background: rgba(235, 94, 34, 0.15);
-			border: 2px solid #EB5E22;
+			background: #1D9DD3;
+			border: 2px solid #22AFEB;
 			font-family: Montserrat;
 			font-style: normal;
 			font-weight: bold;
 			font-size: 18px;
 			line-height: 22px;
 			text-transform: uppercase;
-			padding: 19px 78px;
+			padding: 19px 34px;
 			transition: 0.5s ease;
 			span {
 				opacity: 0.9;
 			}
 			&:hover {
-				background: rgba(235, 94, 34, 0.5);
-				border: 2px solid rgba(235, 94, 34, 0.5);
-				box-shadow: 0 0 5px rgba(235, 94, 34, 0.5);
+				background: rgba(29, 157, 211, 0.8);
+				border: 2px solid rgba(29, 157, 211, 0.5);
+				box-shadow: 0 0 5px rgba(29, 157, 211, 0.5);
 				span {
 					opacity: 1;
 				}

@@ -1,0 +1,50 @@
+.info {
+	padding: 110px 315px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	&__text {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 150%;
+		color: #363636;
+		max-width: 877px;
+		position: relative;
+		span {
+			font-weight: bold;
+		}
+		p:not(:last-child) {
+			margin-bottom: 24px;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			width: 1px;
+			height: 100%;
+			background-color: #E4ECF2;
+			right: 0;
+			top: 0;
+			z-index: 2;
+		}
+	}
+	&__img {
+		.img-belzona {
+			background-image: url(static/belzona-logo.png);
+			width: 254px;
+			height: 115px;
+			margin-bottom: 10px;
+		}
+		.info-belzona {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 10px;
+			line-height: 140%;
+			color: #32587A;
+			max-width: 299px;
+		}
+	}
+}

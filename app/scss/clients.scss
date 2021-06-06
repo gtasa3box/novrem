@@ -1,12 +1,13 @@
 .clients {
 	position: relative;
-	padding-bottom: 115px;
+	padding: 0 315px 70px;
 	&__title {
 		margin-bottom: 50px;
 	}
 	&__slider {
 		.img{
 			max-width: 267px;
+
 		}
 		.card {
 			width: 300px;
@@ -16,6 +17,10 @@
 			justify-content: space-between;
 			align-items: center;
 			border: 1px solid rgba(13, 52, 78, 0.85);
+			padding: 45px 0 40px;
+			&__img{
+				width: 70%;
+			}
 			&__info {
 			}
 			&__button {
@@ -33,6 +38,10 @@
 				color: #FFFFFF;
 				width: 206px;
 				height: 45px;
+				transition: 0.3s ease;
+				&:hover {
+					background: rgba(13, 52, 78, 1);
+				}
 			}
 		}
 	}
