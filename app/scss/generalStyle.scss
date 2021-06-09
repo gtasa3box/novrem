@@ -22,6 +22,39 @@
 	font-size: 24px;
 	line-height: 29px;
 	color: #0A2A37;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #1D9DD3;
+			border: 2px solid #22AFEB;
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 22px;
+			text-transform: uppercase;
+			transition: 0.5s ease;
+			width: 260px;
+			height: 60px;
+			margin-top: 75px;
+			color: white;
+			span {
+				opacity: 0.9;
+			}
+			&:hover {
+				background: rgba(29, 157, 211, 0.8);
+				border: 2px solid rgba(29, 157, 211, 0.5);
+				box-shadow: 0 0 5px rgba(29, 157, 211, 0.5);
+				span {
+					opacity: 1;
+				}
+			}
+	}
 	&_white {
 		color: white;
 	}

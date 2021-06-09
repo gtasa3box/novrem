@@ -1,0 +1,37 @@
+.grid-contain {
+	padding: 0 315px 60px;
+		.grid {
+		margin-top: 54px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.card {
+			width: 300px;
+			height: 186px;
+			background: rgba(13, 52, 78, 0.75);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			backface-visibility: hidden;
+			padding: 0 30px;
+			&__wrapper {
+				background-size: 100%;
+				margin-bottom: 30px;
+				transition: 0.3s ease;
+				backface-visibility: hidden;
+				&:hover {
+					background-size: 120%;
+				}
+			}
+			&__title {
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 22px;
+				line-height: 27px;
+				text-align: center;
+				color: #FFFFFF;
+			}
+		}
+	}
+}

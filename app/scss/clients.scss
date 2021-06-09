@@ -1,47 +1,92 @@
 .clients {
+	padding: 0 315px 90px;
 	position: relative;
-	padding: 0 315px 70px;
-	&__title {
-		margin-bottom: 50px;
+	width: 100%;
+	.wrapper__slider {
+		position: relative;
 	}
 	&__slider {
-		.img{
-			max-width: 267px;
-
+		margin-top: 54px;
+		position: relative;
+	}
+	.slick-prev {
+		width: 40px;
+		height: 40px;
+		background: #456D85;
+		position: absolute;
+		top: -60px;
+		left: 1170px;
+		&:before {
+			content: '';
+			display: block;
+			background-image: url(static/arrow.png);
+			width: 11px;
+			height: 21px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			padding: 0 18px;
 		}
-		.card {
-			width: 300px;
-			height: 340px;
+	}
+	.slick-next {
+		width: 40px;
+		height: 40px;
+		background: #456D85;
+		top: -60px;
+		right: 20px;
+		&:before {
+			content: '';
+			display: block;
+			background-image: url(static/arrow.png);
+			width: 11px;
+			height: 21px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			-webkit-transform: rotate(180deg);
+			-ms-transform: rotate(180deg);
+			transform: rotate(180deg);
+			padding: 0px 22px;
+		}
+	}
+	.card {
+		width: 300px;
+		height: 340px;
+		background: #FFFFFF;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		&__img {
+			background-size: 100%;
+			width: 182px;
+			height: 182px;
+			margin: 0 auto;
+		}
+		&__button {
+			width: 206px;
+			height: 45px;
 			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
+			justify-content: center;
 			align-items: center;
-			border: 1px solid rgba(13, 52, 78, 0.85);
-			padding: 45px 0 40px;
-			&__img{
-				width: 70%;
-			}
-			&__info {
-			}
-			&__button {
-				background: #079CFF;
-				color: white;
-				font-family: Montserrat;
-				font-style: normal;
-				font-weight: bold;
-				font-size: 18px;
-				line-height: 22px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				text-transform: uppercase;
-				color: #FFFFFF;
-				width: 206px;
-				height: 45px;
-				transition: 0.3s ease;
-				&:hover {
-					background: rgba(13, 52, 78, 1);
-				}
+			background: #456D85;
+			margin: 0 auto;
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 22px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			text-transform: uppercase;
+			color: white;
+			transition: 0.3s ease;
+			&:hover {
+				background: rgba(29, 157, 211, 0.8);
+				border: 2px solid rgba(29, 157, 211, 0.5);
+				box-shadow: 0 0 5px rgba(29, 157, 211, 0.5);
 			}
 		}
 	}
