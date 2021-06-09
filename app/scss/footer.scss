@@ -1,0 +1,34 @@
+.footer {
+	padding: 0 315px;
+	background: #182E3E;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__belzona {
+		display: flex;
+		align-items: center;
+		a {
+			background-image: url(static/belzona-logo-white.png);
+			width: 135px;
+			height: 61px;
+		}
+		p {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 10px;
+			line-height: 140%;
+			color: #FFFFFF;
+			max-width: 293px;
+			margin-left: 18px;
+			span {
+				font-weight: bold;
+			}
+		}
+		.belzona-info {
+			margin-top: 6px;
+		}
+	}
+}
