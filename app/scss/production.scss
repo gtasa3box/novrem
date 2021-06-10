@@ -17,6 +17,9 @@
 			font-size: 16px;
 			line-height: 20px;
 			color: #FFFFFF;
+			span {
+				pointer-events: none;
+			}
 		}
 		&__info {
 			position: absolute;
@@ -35,6 +38,9 @@
 			transition: 0.5s ease;
 			opacity: 0;
 			transform: translateY(100px);
+			span {
+				pointer-events: none;
+			}
 		}
 		&:hover {
 			.card__info {
