@@ -62,4 +62,9 @@
 .bg-blue {
 	background-color: #f8fbff;
 }
+.section {
+	&__wrapper {
+		padding: 0 315px 60px;
+	}
+}
 

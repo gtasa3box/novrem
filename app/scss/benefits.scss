@@ -1,10 +1,12 @@
 .benefits {
-	width: 100%;
-	position: relative;
-	flex-wrap: wrap;
-	padding:0 315px 85px;
-	display: flex;
-	justify-content: center;
+	.section__wrapper {
+		width: 100%;
+		position: relative;
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 85px;
+	}
 	&__title {
 		width: 100%;
 	}

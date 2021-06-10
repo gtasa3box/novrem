@@ -1,11 +1,13 @@
 .footer {
-	padding: 0 315px;
 	background: #182E3E;
-	width: 100%;
-	height: 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	&__wrapper {
+		padding: 0 315px;
+		width: 100%;
+		height: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 	&__belzona {
 		display: flex;
 		align-items: center;

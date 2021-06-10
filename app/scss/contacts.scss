@@ -1,9 +1,10 @@
 .contacts {
-	padding: 0 315px 82px;
 	background: #203A51;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	.section__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 	&__title {
 		width: 100%;
 	}

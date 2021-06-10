@@ -1,9 +1,12 @@
 .info {
-	padding: 110px 315px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	position: relative;
+	.section__wrapper {
+		padding-top: 110px;
+		padding-bottom: 110px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+	}
 	&__text {
 		font-family: Montserrat;
 		font-style: normal;
