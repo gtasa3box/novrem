@@ -9,11 +9,6 @@
 	cursor: pointer;
 }
 
-.body {
-	&__wrapper {
-		padding: 0 315px;
-	}
-}
 .title {
 	padding-top: 70px;
 	font-family: Montserrat;
@@ -64,7 +59,8 @@
 }
 .section {
 	&__wrapper {
-		padding: 0 315px 60px;
+		max-width: 1290px;
+		margin: 0 auto;
 	}
 }
 
