@@ -14,7 +14,8 @@
 		background: #456D85;
 		position: absolute;
 		top: -60px;
-		left: 1170px;
+		left: initial;
+		right: 60px;
 		&:before {
 			content: '';
 			display: block;
@@ -32,7 +33,7 @@
 		height: 40px;
 		background: #456D85;
 		top: -60px;
-		right: 20px;
+		right: 0;
 		&:before {
 			content: '';
 			display: block;
