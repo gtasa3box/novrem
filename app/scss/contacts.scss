@@ -65,6 +65,13 @@
 		background: #182E3E;
 		padding: 14px 20px;
 		color: white;
+		&:hover {
+			background: #182e3eb8;
+		}
+		&:focus {
+			background:#182e3e66;
+			outline: 2px dashed #182e3eb8;
+		}
 	}
 	&__name {
 		width: 245px;
@@ -91,6 +98,13 @@
 		background: #182E3E;
 		color: white;
 		outline: none;
+		&:hover {
+			background: #182e3eb8;
+		}
+		&:focus {
+			background:#182e3e66;
+			outline: 2px dashed #182e3eb8;
+		}
 	}
 	&__checkbox {
 		width: 100%;

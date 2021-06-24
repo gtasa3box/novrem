@@ -1,0 +1,68 @@
+.info-production__wrapper {
+	background: linear-gradient(90deg, #182B41 0%, #182B41 52.08%, rgba(24, 43, 65, 0.3) 69.79%, rgba(24, 43, 65, 0) 100%);
+	position: relative;
+}
+.production-info {
+	.section__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__lists {
+		width: 50%;
+		padding-right: 60px;
+		ul {
+			li {
+				display: list-item;
+				list-style-image: url(static/list-dot.png);
+				max-width: 613px;
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 140%;
+				color: #5B5B5B;
+				&:not(:last-child) {
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+	.main-benefits {
+		&__title {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 22px;
+			line-height: 27px;
+			color: #113E52;
+			margin-bottom: 40px;
+			margin-top: 70px;
+		}
+	}
+	&__table {
+		width: 50%;
+		table {
+			th {
+				border: 1px solid #113E52;
+				background: #E9F0F9;
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 22px;
+				color: #113E52;
+				padding: 16px 25px;
+			}
+			td {
+				border: 1px solid #C9D7E7;
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 130%;
+				color: #000000;
+				padding: 16px 25px;
+			}
+		}
+	}
+}

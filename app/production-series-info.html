@@ -7,14 +7,16 @@
 </head>
 <body>
 	<!--Header-->
-	<div class="production__wrapper" style="background-image: url(static/production/1000/1111_1.jpg);">
 		<header class="header" id="header">
 			<div class="header__wrapper">
+				<div id="burger" class="header__burger">
+					<a id="burgerlink" class="burger"></a>
+				</div>
 				<div class="header__logo">
 					<a href="" class="logo img"></a>
 				</div>
 				<div class="header__nav">
-					<nav class="nav">
+					<nav id="nav" class="nav">
 						<a href="" class="nav__elem">Отрасли</a>
 						<a href="" class="nav__elem">Сферы применения</a>
 						<a href="" class="nav__elem">Продукция</a>
@@ -23,30 +25,97 @@
 					</nav>
 				</div>
 				<div class="header__number">
-					<div><a href="tel:+78312465432" class="number">+7(831) 246-54-32</a></div>
+					<div><a href="tel:+78312465432" class="number"><span>+7(831) 246-54-32</span></a></div>
 					<div class="text">Нижний Новгород и область</div>
 				</div>
 			</div>
 		</header>
 
-	<!--Intro-->
+	<!--Intro
 		<main class="intro intro_production">
-			<div class="intro__content content">
-				<h2 class="content__title">BELZONA 1111</h2>
-				<h1 class="content__text">МНОГОЦЕЛЕВОЙ РЕМОНТНЫЙ КОМПОЗИТ</h1>
-				<a class="content__button button"><span>ЗАКАЗАТЬ РЕМОНТ</span></a>
+			<div class="info-production__wrapper">
+				<div class="intro_production__bg" style="background-image: url(static/production/1000/1111_1.jpg);"></div>
+				<div class="intro__content content">
+					<h2 class="content__title">BELZONA 1111</h2>
+					<h1 class="content__text">МНОГОЦЕЛЕВОЙ РЕМОНТНЫЙ КОМПОЗИТ</h1>
+					<a class="content__button button"><span>ЗАКАЗАТЬ РЕМОНТ</span></a>
+				</div>
 			</div>
-		</main>
-	</div><!--main__wrapper end-->
+		</main>-->
 
-	<!--production cards -->
-	<section class="production-cards">
+	<!--production cards 
+	<section class="production-info">
 		<div class="section__wrapper">
-			
+			<div class="production-info__lists">
+				<h3 class="main-benefits__title">Основные преимущества:</h3>
+				<ul>
+					<li>Универсальный прочный ремонтный композит</li>
+					<li>Полная механическая обработка с помощью традиционного резца</li>
+					<li>Нанесение и отверждение в условиях температуры окружающей среды – без горячей обработки</li>
+					<li>Простой коэффициент смешивания</li>
+					<li>Отсутствие растворителя снижает риск причинения вреда здоровью и пожароопасность</li>
+					<li>Отсутствие усадки, объемного расширения и деформации</li>
+					<li>Отличная адгезия к металлам, включая нержавеющую сталь, углеродистую сталь, алюминий, латунь и медь</li>
+					<li>Адгезия ко многим природным и синтетическим материалам, включая стекло, дерево и др.</li>
+					<li>Исключительная защита от коррозии</li>
+					<li>Отличная химическая защита от воздействия широкого ряда химических веществ</li>
+					<li>Превосходные электроизоляционные характеристики</li>
+				</ul>
+				<h3 class="main-benefits__title">Области применения:</h3>
+				<ul>
+					<li>Ремонт трещин и отверстий корпусов двигателей и насосов, а также другого оборудования, включая трубопроводы и резервуары</li>
+					<li>Восстановление металлических поверхностей, поврежденных питтинговой коррозией</li>
+					<li>Ремонт изношенных и поврежденных валов и гидроцилиндров</li>
+					<li>Ремонт деформированных поверхностей фланцев на месте поломки</li>
+					<li>Высокопрочный конструкционный адгезив для крепления металлических элементов оборудования</li>
+					<li>Создание несущих нагрузку поверхностей неправильной формы, а также восстановление разбитых посадочных мест подшипников</li>
+				</ul>
+			</div>
+			<div class="production-info__table">
+				<h3 class="main-benefits__title">Ключевая техническая информация:</h3>
+				<table>
+					<tr>
+						<th>Наименование</th>
+						<th>Характеристика</th>
+					</tr>
+					<tr>
+						<td>Жизнеспособность при температуре 25°C</td>
+						<td>15 минут</td>
+					</tr>
+					<tr>
+						<td>Время отверждения для полной механической нагрузки при температуре 25°C</td>
+						<td>20 часов</td>
+					</tr>
+					<tr>
+						<td>Адгезионная прочность на отрыв (D4541 / ISO 4624)</td>
+						<td>228 кг/см2 (22,33 МПа) отверждение при комнатной температуре на абразивоструйно очищенной стали</td>
+					</tr>
+					<tr>
+						<td>Прочность на сжатие (ASTM D695)</td>
+						<td>907 кг/см2 (88,9 МПа) отверждение при комнатной температуре</td>
+					</tr>
+					<tr>
+						<td>Теплостойкость</td>
+						<td>93°C во влажных условиях, 200°C в сухих условиях</td>
+					</tr>
+					<tr>
+						<td>Высокая адгезия к таким материалам, как</td>
+						<td>Алюминий, медь, сталь, нержавеющая сталь, чугун, свинец, стекло, дерево, большинство видов пластмассы и др.</td>
+					</tr>
+					<tr>
+						<td>Типичные применения</td>
+						<td>Адгезив для сцепления металлов и создания регулировочных прокладок, затирка, приклеивание, заплаточный ремонт и др.</td>
+					</tr>
+					<tr>
+						<td>Размер упаковки продукта</td>
+						<td>400 г, 1 кг, 5 кг. Размер упаковки может варьироваться в зависимости от региона.</td>
+					</tr>
+				</table>
+			</div>
 		</div>
-	</section>
+	</section>-->
 
-	<!--Contacts-->
+	<!--Contacts
 	<section class="contacts">
 		<div class="section__wrapper">
 			<div class="contacts__title">
@@ -80,9 +149,9 @@
 				</form>
 			</div>
 		</div>
-	</section>
+	</section>-->
 
-	<!--footer-->
+	<!--footer
 	<footer id="footer" class="footer">
 		<div class="footer__wrapper">
 			<div class="footer__belzona">
@@ -96,6 +165,6 @@
 				<a href="" class="logo img"></a>
 			</div>
 		</div>
-	</footer>
+	</footer>-->
 </body>
 </html>

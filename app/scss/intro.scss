@@ -1,27 +1,65 @@
 .intro {
-	max-width: 1290px;
-	margin: 0 auto;
-	padding-top: 152px;
-	padding-bottom: 209px ;
-	color: white;
+	width: 100%;
+	&__wrapper {
+		background-image:url(static/background-main.jpg);
+		position: relative;
+		top: -85px;
+		@media screen and (min-width: 319px) {
+			top: 0;
+			background-position: center;
+			}
+		@media screen and (min-width: 1310px) {
+			top: -85px;
+		}
+	}
 	.content {
+		max-width: 1290px;
+		margin: 0 auto;
+		color: white;
+		@media screen and (min-width: 319px) {
+			padding: 70px 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		@media screen and (min-width: 768px) {
+			padding-top: 237px;
+			padding-bottom: 209px;
+		}
+		@media screen and (min-width: 1310px) {
+			padding: 237px 0 209px;
+		}
 		&__title {
 			font-family: Montserrat;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 48px;
-			line-height: 59px;
 			width: fit-content;
+			@media screen and (min-width: 319px) {
+				font-size: 30px;
+				line-height: 36px;
+			}
+			@media screen and (min-width: 666px) {
+				font-size: 48px;
+				line-height: 59px;
+			}
 		}
 		&__text {
 			font-family: Montserrat;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 24px;
 			line-height: 140%;
 			color: rgba(255, 255, 255, 1);
 			max-width: 847px;
-			margin: 10px 0 42px;
+			@media screen and (min-width: 319px) {
+				font-size: 18px;
+				margin: 20px 0 50px;
+			}
+			@media screen and (min-width: 666px) {
+				font-size: 24px;
+			}
+			@media screen and (min-width: 768px) {
+				margin: 10px 0 42px;
+			}
 			span {
 				font-weight: bold;
 			}
@@ -37,7 +75,13 @@
 			line-height: 22px;
 			text-transform: uppercase;
 			padding: 19px 34px;
-			transition: 0.5s ease;
+			transition: 0.5s background ease;
+			@media screen and (min-width: 319px) {
+				margin: 0 auto;
+			}
+			@media screen and (min-width: 666px) {
+				margin: 0;
+			}
 			span {
 				opacity: 0.9;
 			}
