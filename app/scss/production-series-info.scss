@@ -10,6 +10,18 @@
 	&__lists {
 		width: 50%;
 		padding-right: 60px;
+		@media screen and (min-width: 319px) {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			padding-right: inherit;
+		}
+		@media screen and (min-width: 1365px) {
+			width: 50%;
+			padding-right: 60px;
+			display: inherit;
+		}
 		ul {
 			li {
 				display: list-item;
@@ -21,6 +33,12 @@
 				font-size: 16px;
 				line-height: 140%;
 				color: #5B5B5B;
+				@media screen and (min-width: 319px) {
+					margin-left: 20px;
+				}
+				@media screen and (min-width: 1365px) {
+					margin-left: inherit;
+				}
 				&:not(:last-child) {
 					margin-bottom: 20px;
 				}
@@ -37,10 +55,25 @@
 			color: #113E52;
 			margin-bottom: 40px;
 			margin-top: 70px;
+			@media screen and (min-width: 319px) {
+				width: 100%;
+				text-align: center;
+				margin-top: 40px;
+			}
+			@media screen and (min-width: 1365px) {
+				text-align: inherit;
+				margin-top: 70px;
+			}
 		}
 	}
 	&__table {
 		width: 50%;
+		@media screen and (min-width: 319px) {
+			width: 100%;
+		}
+		@media screen and (min-width: 1365px) {
+			width: 50%;
+		}
 		table {
 			th {
 				border: 1px solid #113E52;
@@ -52,6 +85,16 @@
 				line-height: 22px;
 				color: #113E52;
 				padding: 16px 25px;
+				@media screen and (min-width: 319px) {
+					padding: 5px 10px;
+					font-size: 14px;
+					line-height: 18px;
+				}
+				@media screen and (min-width: 1365px) {
+					font-size: 18px;
+					line-height: 22px;
+					padding: 16px 25px;
+				}
 			}
 			td {
 				border: 1px solid #C9D7E7;
@@ -62,6 +105,14 @@
 				line-height: 130%;
 				color: #000000;
 				padding: 16px 25px;
+				@media screen and (min-width: 319px) {
+					padding: 5px 10px;
+					font-size: 12px;
+				}
+				@media screen and (min-width: 1365px) {
+					padding: 16px 25px;
+					font-size: 16px;
+				}
 			}
 		}
 	}

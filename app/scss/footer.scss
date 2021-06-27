@@ -1,5 +1,17 @@
 .footer {
 	background: #182E3E;
+	&__logo {
+		@media screen and (min-width: 319px) {
+			a {
+				width: 150px;
+			}
+		}
+		@media screen and (min-width: 666px) {
+			a {
+				width: 190px;
+			}
+		}
+	}
 	&__wrapper {
 		max-width: 1290px;
 		margin: 0 auto;
