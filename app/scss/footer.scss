@@ -8,10 +8,25 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media screen and (min-width: 319px) {
+			padding: 20px 50px;
+			flex-direction: column;
+			height: 170px;
+		}
+		@media screen and (min-width: 735px) {
+			flex-direction: row;
+			height: 100px;
+		}
+		@media screen and (min-width: 1365px) {
+			padding: inherit;
+		}
 	}
 	&__belzona {
 		display: flex;
 		align-items: center;
+		@media screen and (min-width: 319px) {
+			margin-bottom: 20px;
+		}
 		a {
 			background-image: url(static/belzona-logo-white.png);
 			width: 135px;
@@ -32,6 +47,12 @@
 		}
 		.belzona-info {
 			margin-top: 6px;
+			@media screen and (min-width: 735px) {
+				max-width: 300px;
+			}
+			@media screen and (min-width: 1365px) {
+				max-width: inherit;
+			}
 		}
 	}
 }

@@ -9,14 +9,22 @@
 		width: 100%;
 	}
 	&__info {
-		width: 50%;
-		margin-top: 70px;
 		font-family: Montserrat;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 16px;
 		line-height: 170%;
 		color: #E3E3E3;
+		@media screen and (min-width: 319px) {
+			width: 100%;
+			order: 2;
+			margin-top: 20px;
+		}
+		@media screen and (min-width: 1365px) {
+			order: inherit;
+			width: 50%;
+			margin-top: 70px;
+		}
 		span {
 			font-weight: bold;
 		}
@@ -29,6 +37,12 @@
 		width: 120px;
 		display: flex;
 		justify-content: space-between;
+		@media screen and (min-width: 319px) {
+			order: 1;
+		}
+		@media screen and (min-width: 1365px) {
+			order: inherit;
+		}
 		a {
 			width: 30px;
 			height: 30px;
@@ -43,17 +57,24 @@
 		}
 	}
 	&__form {
-		width: 50%;
 		display: flex;
-		justify-content: flex-end;
-		margin-top: -22px;
+		@media screen and (min-width: 319px) {
+			order: 3;
+			margin-top: 20px;
+			width: 100%;
+			justify-content: flex-start;
+		}
+		@media screen and (min-width: 1365px) {
+			order: inherit;
+			width: 50%;
+			margin-top: -22px;
+			justify-content: flex-end;
+		}
 	}
 }
 
 .form-backconnect {
-	width: 490px;
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
 	font-family: Montserrat;
 	font-style: normal;
@@ -61,6 +82,19 @@
 	font-size: 14px;
 	line-height: 17px;
 	color: rgba(255, 255, 255, 0.5);
+	@media screen and (min-width: 319px) {
+		width: 100%;
+	}
+	@media screen and (min-width: 666px) {
+		justify-content: flex-start;
+	}
+	@media screen and (min-width: 1120px) {
+		width: 540px;
+	}
+	@media screen and (min-width: 1365px) {
+		justify-content: space-between;
+		width: 490px;
+	}
 	input {
 		background: #182E3E;
 		padding: 14px 20px;
@@ -74,30 +108,72 @@
 		}
 	}
 	&__name {
-		width: 245px;
-		input {
+		@media screen and (min-width: 319px) {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		@media screen and (min-width: 666px) {
 			width: 245px;
+			margin-bottom: 0;
+		}
+		@media screen and (min-width: 1040px) {
+			width: 285px;
+		}
+		@media screen and (min-width: 1365px) {
+			width: 245px;
+		}
+		input {
 			height: 45px;
 			outline: none;
+			@media screen and (min-width: 319px) {
+				width: 100%;
+			}
+			@media screen and (min-width: 1365px) {
+				width: 245px;
+			}
 		}
 	}
 	&__phone {
-		width: 230px;
-		input {
+		@media screen and (min-width: 319px) {
+			width: 100%;
+			}
+		@media screen and (min-width: 666px) {
+			width: 245px;
+			margin-left: 10px;
+			}
+		@media screen and (min-width: 1365px) {
 			width: 230px;
+			margin-left: 0;
+		}
+		input {
 			height: 45px;
 			outline: none;
+			@media screen and (min-width: 319px) {
+				width: 100%;
+			}
+			@media screen and (min-width: 1365px) {
+				width: 230px;
+			}
 		}
 	}
 	&__text {
+		width: 490px;
 		margin-top: 15px;
 		padding: 14px 20px;
 		resize: none;
-		width: 490px;
 		height: 84px;
 		background: #182E3E;
 		color: white;
 		outline: none;
+		@media screen and (min-width: 666px) {
+			width: 500px;
+		}
+		@media screen and (min-width: 1040px) {
+			width:540px;
+		}
+		@media screen and (min-width: 1365px) {
+			width: 490px;
+		}
 		&:hover {
 			background: #182e3eb8;
 		}
@@ -158,6 +234,12 @@
 		text-transform: uppercase;
 		color: #FFFFFF;
 		transition: 0.5s ease;
+		@media screen and (min-width: 666px) {
+			width: 264px;
+		}
+		@media screen and (min-width: 1365px) {
+			width: 100%;
+		}
 		span {
 			opacity: 0.9;
 			}

@@ -2,8 +2,13 @@
 		.grid {
 		margin-top: 54px;
 		display: flex;
-		justify-content: space-between;
 		flex-wrap: wrap;
+		@media screen and (min-width: 350px) {
+			justify-content: space-around;
+		}
+		@media screen and (min-width: 1365px) {
+			justify-content: space-between;
+		}
 		.card {
 			width: 300px;
 			height: 186px;

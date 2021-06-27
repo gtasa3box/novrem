@@ -46,6 +46,7 @@ $('.clients__slider').slick({
 	{
 	  breakpoint: 600,
 	  settings: {
+	  	arrows: false,
 		slidesToShow: 2,
 		slidesToScroll: 2
 	  }
@@ -53,6 +54,8 @@ $('.clients__slider').slick({
 	{
 	  breakpoint: 480,
 	  settings: {
+	  	arrows: false,
+	  	autoplay: true,
 		slidesToShow: 1,
 		slidesToScroll: 1
 	  }

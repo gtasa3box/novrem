@@ -15,10 +15,35 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
+		@media screen and (min-width: 319px) {
+			margin-top: 50px;
+			flex-direction: column;
+			width: 100%;
+		}
+		@media screen and (min-width: 666px) {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
 	}
 	.card {
 		max-width: 218px;
 		position: relative;
+		@media screen and (min-width: 319px) {
+			width: 100%;
+			max-width: inherit;
+			&:not(:last-child){
+				margin-bottom: 40px;
+			}
+		}
+		@media screen and (min-width: 666px) {
+			width: 45%;
+		}
+		@media screen and (min-width: 1365px) {
+			max-width: 218px;
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+		}
 		&__title {
 			display: block;
 			width: 222px;
@@ -33,6 +58,13 @@
 			font-size: 18px;
 			line-height: 24px;
 			color: #3A3A3A;
+			@media screen and (min-width: 319px) {
+				width: 100%;
+				justify-content: center;
+			}
+			@media screen and (min-width: 666px) {
+				justify-content: flex-start;
+			}
 		}
 		&__text {
 			font-family: Montserrat;
@@ -43,6 +75,14 @@
 			color: #5B5B5B;
 			margin-top: 5px;
 			padding-left: 12px;
+			@media screen and (min-width: 319px) {
+				text-align: center;
+				padding-left: inherit;
+			}
+			@media screen and (min-width: 666px) {
+				text-align: inherit;
+				padding-left: 12px;
+			}
 		}
 	}
 }

@@ -50,7 +50,6 @@
 		}
 	}
 	.card {
-		width: 300px;
 		height: 340px;
 		background: #FFFFFF;
 		display: flex;
@@ -58,6 +57,21 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
+		@media screen and (min-width: 319px) {
+			width: 100%;
+		}
+		@media screen and (min-width: 1365px) {
+			width: 300px;
+		}
+		&__wrapper {
+			padding: 0 10px;
+			@media screen and (min-width: 666px) {
+				padding: 0 5px;
+			}
+			@media screen and (min-width: 1365px) {
+				padding: 0;
+			}
+		}
 		&__img {
 			background-size: 100%;
 			width: 182px;
