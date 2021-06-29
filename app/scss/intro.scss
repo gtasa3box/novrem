@@ -1,16 +1,17 @@
 .intro {
 	width: 100%;
-	&__wrapper {
-		background-image:url(static/background-main.jpg);
-		position: relative;
-		top: -85px;
+	background-image:url(static/background-main.jpg);
+	top: 0;
+	position: relative;
 		@media screen and (min-width: 319px) {
-			top: 0;
 			background-position: center;
-			}
-		@media screen and (min-width: 1310px) {
-			top: -85px;
 		}
+		@media screen and (min-width: 1310px) {
+			background-position: bottom 690px right -200px;
+		}
+	&__wrapper {
+		background: linear-gradient(90deg, #182B41 0%, #182B41 52.08%, rgba(24, 43, 65, 0.3) 69.79%, rgba(24, 43, 65, 0) 100%);
+		position: relative;
 	}
 	.content {
 		max-width: 1290px;

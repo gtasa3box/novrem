@@ -63,9 +63,10 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: './app/index.html',
-      template: './app/production-series.html',
       template: './app/production-series-info.html',
+      template: './app/production-series.html',
+      template: './app/scopes.html',
+      template: './app/index.html',
       minify: false
     }),
     new webpack.HotModuleReplacementPlugin(),
