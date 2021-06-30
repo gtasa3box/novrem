@@ -10,7 +10,7 @@
 			background-position: bottom 690px right -200px;
 		}
 	&__wrapper {
-		background: linear-gradient(90deg, #182B41 0%, #182B41 52.08%, rgba(24, 43, 65, 0.3) 69.79%, rgba(24, 43, 65, 0) 100%);
+		background: linear-gradient(90deg, #182B41 0%, #182B41 1.08%, rgba(24, 43, 65, 0.3) 40.79%, rgba(24, 43, 65, 0) 100%);
 		position: relative;
 	}
 	.content {
@@ -24,8 +24,8 @@
 			align-items: flex-start;
 		}
 		@media screen and (min-width: 768px) {
-			padding-top: 210px;
-			padding-bottom: 180px;
+			padding-top: 150px;
+			padding-bottom: 130px;
 		}
 		@media screen and (min-width: 1310px) {
 			padding: 237px 0 209px;
@@ -78,10 +78,11 @@
 			padding: 19px 34px;
 			transition: 0.5s background ease;
 			@media screen and (min-width: 319px) {
-				margin: 0 auto;
+				width: 100%;
 			}
 			@media screen and (min-width: 666px) {
 				margin: 0;
+				width: fit-content;
 			}
 			span {
 				opacity: 0.9;

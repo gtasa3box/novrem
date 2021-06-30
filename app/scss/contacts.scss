@@ -43,16 +43,46 @@
 		@media screen and (min-width: 1365px) {
 			order: inherit;
 		}
+		&__facebook {
+			&:before {
+				background-image: url(static/soc/facebook.png);
+				background-size: 15px 15px;
+			}
+		}
+		&__inst {
+			&:before {
+				background-image: url(static/soc/instagram.png);
+				background-size: 18px 18px;
+			}
+		}
+		&__telegram {
+			&:before {
+				background-image: url(static/soc/telegam.png);
+				background-size: 21px 21px;
+			}
+		}
 		a {
 			width: 30px;
 			height: 30px;
-			background-color: #182E3E;
-			border-radius: 2px;
-			background-repeat: no-repeat;
-			transition: 0.3s ease;
+			position: relative;
+			&:before {
+				background-color: #182E3E;
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 30px;
+				height: 30px;
+				background-repeat: no-repeat;
+				background-position: center;
+				border-radius: 2px;
+				transition: 0.3s ease;
+			}
 			&:hover {
-				background-color: #1D9DD3;
-				transform: rotate(360deg);
+				&:before {
+					background-color: #1D9DD3;
+					transform: rotateY(360deg);
+				}
 			}
 		}
 	}
@@ -216,6 +246,13 @@
 		span {
 			display: inline-flex;
 			align-items: center;
+		}
+		&:hover {
+			&>span:before {
+				-webkit-box-shadow: 0px 0px 1px 4px rgba(122, 216, 255, 0.5) inset;
+				-moz-box-shadow: 0px 0px 1px 4px rgba(122, 216, 255, 0.5) inset;
+				box-shadow: 0px 0px 1px 4px rgba(122, 216, 255, 0.5) inset;
+			}
 		}
 	}
 	&__button {

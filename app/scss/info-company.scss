@@ -59,8 +59,11 @@
 			order: 1;
 		}
 		@media screen and (min-width: 666px) {
-			margin-top: 20px;
+			margin-top: 50px;
 			order: 2;
+		}
+		@media screen and (min-width: 1365px) {
+			margin-top: 0;
 		}
 		.img-belzona {
 			background-image: url(static/belzona-logo.png);
@@ -72,6 +75,7 @@
 			@media screen and (min-width: 666px) {
 				width: 254px;
 				height: 115px;
+				margin: 0;
 				margin-bottom: 10px;
 			}
 		}
