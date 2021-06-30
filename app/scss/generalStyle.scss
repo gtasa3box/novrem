@@ -9,6 +9,14 @@
 	cursor: pointer;
 	text-align: center;
 }
+.section {
+	width: 100%;
+	position: relative;
+	&__header {
+		display: flex;
+		justify-content: space-between;
+	}
+}
 
 .title {
 	font-family: Montserrat;
@@ -24,10 +32,6 @@
 	@media screen and (min-width: 666px) {
 		text-align: inherit;
 		padding-top: 70px;
-	}
-	&__wrapper {
-		display: flex;
-		justify-content: space-between;
 	}
 	&__button {
 			justify-content: center;

@@ -1,7 +1,5 @@
 .production {
 	.card {
-		position:relative;
-		overflow: hidden;
 		@media screen and (min-width: 319px) {
 			height: 240px;
 			width: 100%;
@@ -78,6 +76,7 @@
 			background-size: cover;
 			margin-bottom: 30px;
 			position: relative;
+			overflow: hidden;
 			@media screen and (min-width: 319px) {
 				width: 100%;
 			}
