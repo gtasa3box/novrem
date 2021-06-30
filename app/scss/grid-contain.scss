@@ -1,13 +1,17 @@
 .grid-contain {
 		.grid {
-		margin-top: 54px;
-		display: flex;
-		flex-wrap: wrap;
+			margin-top: 54px;
+			display: flex;
+			flex-wrap: wrap;
 		@media screen and (min-width: 350px) {
 			justify-content: space-around;
 		}
+		@media screen and (min-width: 666px) {
+			margin: 54px -10px 0;
+		}
 		@media screen and (min-width: 1365px) {
 			justify-content: space-between;
+			margin: 54px 0 0;
 		}
 		&__element {
 			cursor: pointer;

@@ -1,3 +1,5 @@
+$desktop:1200px;
+
 .img {
 	display: block;
 	background-size: contain;
@@ -52,7 +54,7 @@
 			@media screen and (min-width: 319px) {
 				display: none;
 			}
-			@media screen and (min-width: 1365px) {
+			@media screen and (min-width:$desktop) {
 				display: flex;
 			}
 			span {
@@ -83,9 +85,13 @@
 			padding-left: 20px;
 			padding-right: 20px;
 		}
+		@media screen and (min-width: 710px) {
+			padding-left: 60px;
+			padding-right: 60px;
+		}
 		@media screen and (min-width: 1365px) {
-			padding-right: inherit;
-			padding-left: inherit;
+			padding-right: 0;
+			padding-left: 0;
 		}
 	}
 }

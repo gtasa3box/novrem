@@ -67,9 +67,6 @@
 		flex-wrap: wrap;
 		margin-top: 55px;
 		@media screen and (min-width: 319px) {
-			justify-content: space-around;
-		}
-		@media screen and (min-width: 1365px) {
 			justify-content: space-between;
 		}
 		&__item {

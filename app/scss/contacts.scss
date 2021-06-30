@@ -20,7 +20,7 @@
 			order: 2;
 			margin-top: 20px;
 		}
-		@media screen and (min-width: 1365px) {
+		@media screen and (min-width: $desktop) {
 			order: inherit;
 			width: 50%;
 			margin-top: 70px;
@@ -30,6 +30,9 @@
 		}
 		a {
 			font-weight: bold;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 	.soc {
@@ -40,7 +43,7 @@
 		@media screen and (min-width: 319px) {
 			order: 1;
 		}
-		@media screen and (min-width: 1365px) {
+		@media screen and (min-width: $desktop) {
 			order: inherit;
 		}
 		&__facebook {
@@ -94,7 +97,7 @@
 			width: 100%;
 			justify-content: flex-start;
 		}
-		@media screen and (min-width: 1365px) {
+		@media screen and (min-width: $desktop) {
 			order: inherit;
 			width: 50%;
 			margin-top: -22px;
@@ -121,7 +124,7 @@
 	@media screen and (min-width: 1120px) {
 		width: 540px;
 	}
-	@media screen and (min-width: 1365px) {
+	@media screen and (min-width: $desktop) {
 		justify-content: space-between;
 		width: 490px;
 	}
@@ -149,7 +152,7 @@
 		@media screen and (min-width: 1040px) {
 			width: 285px;
 		}
-		@media screen and (min-width: 1365px) {
+		@media screen and (min-width: $desktop) {
 			width: 245px;
 		}
 		input {
@@ -158,7 +161,7 @@
 			@media screen and (min-width: 319px) {
 				width: 100%;
 			}
-			@media screen and (min-width: 1365px) {
+			@media screen and (min-width: $desktop) {
 				width: 245px;
 			}
 		}
@@ -171,7 +174,7 @@
 			width: 245px;
 			margin-left: 10px;
 			}
-		@media screen and (min-width: 1365px) {
+		@media screen and (min-width: $desktop) {
 			width: 230px;
 			margin-left: 0;
 		}
@@ -181,7 +184,7 @@
 			@media screen and (min-width: 319px) {
 				width: 100%;
 			}
-			@media screen and (min-width: 1365px) {
+			@media screen and (min-width: $desktop) {
 				width: 230px;
 			}
 		}
@@ -201,7 +204,7 @@
 		@media screen and (min-width: 1040px) {
 			width:540px;
 		}
-		@media screen and (min-width: 1365px) {
+		@media screen and (min-width: $desktop) {
 			width: 490px;
 		}
 		&:hover {
@@ -219,6 +222,7 @@
 		display: inline-flex;
 		align-items: center;
 		user-select: none;
+		cursor: pointer;
 		&>span:before {
 			content: '';
 			display: inline-flex;
@@ -274,7 +278,7 @@
 		@media screen and (min-width: 666px) {
 			width: 264px;
 		}
-		@media screen and (min-width: 1365px) {
+		@media screen and (min-width: $desktop) {
 			width: 100%;
 		}
 		span {

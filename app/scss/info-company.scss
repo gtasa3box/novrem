@@ -7,6 +7,9 @@
 			flex-direction: column;
 			padding: 30px 20px;
 		}
+		@media screen and (min-width: 710px) {
+			padding: 60px;
+		}
 		@media screen and (min-width: 1366px) {
 			flex-direction: row;
 			padding: 110px 0;
@@ -18,15 +21,21 @@
 		font-weight: normal;
 		line-height: 150%;
 		color: #363636;
-		max-width: 877px;
 		position: relative;
 		@media screen and (min-width: 319px) {
 			order: 2;
 			font-size: 14px;
+			padding-top: 20px;
 		}
 		@media screen and (min-width: 666px) {
+			padding-top: 60px;
+		}
+		@media screen and (min-width: 1365px) {
 			order: 1;
 			font-size: 16px;
+			padding-top: 0;
+			max-width: 877px;
+			margin-right: 60px;
 		}
 		span {
 			font-weight: bold;
@@ -42,27 +51,35 @@
 			top: 0;
 			z-index: 2;
 			@media screen and (min-width: 319px) {
-				width: 0;
-				height: 0;
-				visibility: hidden;
+				width: 100%;
+				height: 1px;
 			}
 			@media screen and (min-width: 1366px) {
 				width: 1px;
 				height: 100%;
 				visibility: visible;
+				right: -50px;
 			}
 		}
 	}
 	&__img {
 		@media screen and (min-width: 319px) {
 			order: 1;
+			padding-bottom: 20px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 		@media screen and (min-width: 666px) {
-			margin-top: 50px;
-			order: 2;
+			padding-bottom: 60px;
 		}
 		@media screen and (min-width: 1365px) {
 			margin-top: 0;
+			padding-bottom: 0;
+			flex-direction: column;
+			align-items: flex-start;
+			width: inherit;
 		}
 		.img-belzona {
 			background-image: url(static/belzona-logo.png);
@@ -75,23 +92,34 @@
 				width: 254px;
 				height: 115px;
 				margin: 0;
-				margin-bottom: 10px;
 			}
 		}
 		.info-belzona {
 			font-family: Montserrat;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 10px;
 			line-height: 140%;
 			color: #32587A;
 			@media screen and (min-width: 319px) {
-				max-width: 250px;
-				margin-bottom: 40px;
+				font-size: 10px;
+				margin-left: 20px;
+			}
+			@media screen and (min-width: 359px) {
+				font-size: 14px;
+				margin-left: 30px;
+			}
+			@media screen and (min-width: 650px) {
+				font-size: 18px;
+				margin-top: 40px;
 			}
 			@media screen and (min-width: 666px) {
+				max-width: 440px;
+			}
+			@media screen and (min-width: 1365px) {
 				max-width: 299px;
-				margin-bottom: 0;
+				font-size: 10px;
+				margin-left: 0;
+				margin-top: 10px;
 			}
 		}
 	}

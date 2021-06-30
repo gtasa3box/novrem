@@ -44,7 +44,7 @@ $('.clients__slider').slick({
 	  }
 	},
 	{
-	  breakpoint: 600,
+	  breakpoint: 665,
 	  settings: {
 	  	arrows: false,
 		slidesToShow: 2,
