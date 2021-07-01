@@ -15,3 +15,28 @@
 		}
 	}
 }
+.scopes-info {
+	.wrapper {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+	&__text {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 140%;
+		color: #113E52;
+		max-width: 850px;
+		&:last-child {
+			margin-top: 40px;
+		}
+		@media screen and (min-width: 319px) {
+			width: 100%;
+			text-align: center;
+		}
+		@media screen and (min-width: 666px) {
+			text-align: left;
+		}
+	}
+}

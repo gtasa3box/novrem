@@ -2,69 +2,69 @@
 	background: linear-gradient(90deg, #182B41 0%, #182B41 52.08%, rgba(24, 43, 65, 0.3) 69.79%, rgba(24, 43, 65, 0) 100%);
 	position: relative;
 }
+.lists {
+	width: 50%;
+	padding-right: 60px;
+	@media screen and (min-width: 319px) {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		padding-right: inherit;
+	}
+	@media screen and (min-width: 1365px) {
+		width: 50%;
+		padding-right: 60px;
+		display: inherit;
+	}
+	ul {
+		li {
+			display: list-item;
+			list-style-image: url(static/list-dot.png);
+			max-width: 613px;
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 140%;
+			color: #5B5B5B;
+			@media screen and (min-width: 319px) {
+				margin-left: 20px;
+			}
+			@media screen and (min-width: 1365px) {
+				margin-left: inherit;
+			}
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+.main-benefits {
+	&__title {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 27px;
+		color: #113E52;
+		margin-bottom: 40px;
+		margin-top: 70px;
+		@media screen and (min-width: 319px) {
+			width: 100%;
+			text-align: center;
+			margin-top: 40px;
+		}
+		@media screen and (min-width: 666px) {
+			text-align: inherit;
+			margin-top: 70px;
+		}
+	}
+}
 .production-info {
 	.wrapper {
 		display: flex;
 		flex-wrap: wrap;
-	}
-	&__lists {
-		width: 50%;
-		padding-right: 60px;
-		@media screen and (min-width: 319px) {
-			width: 100%;
-			display: flex;
-			align-items: center;
-			flex-wrap: wrap;
-			padding-right: inherit;
-		}
-		@media screen and (min-width: 1365px) {
-			width: 50%;
-			padding-right: 60px;
-			display: inherit;
-		}
-		ul {
-			li {
-				display: list-item;
-				list-style-image: url(static/list-dot.png);
-				max-width: 613px;
-				font-family: Montserrat;
-				font-style: normal;
-				font-weight: normal;
-				font-size: 16px;
-				line-height: 140%;
-				color: #5B5B5B;
-				@media screen and (min-width: 319px) {
-					margin-left: 20px;
-				}
-				@media screen and (min-width: 1365px) {
-					margin-left: inherit;
-				}
-				&:not(:last-child) {
-					margin-bottom: 20px;
-				}
-			}
-		}
-	}
-	.main-benefits {
-		&__title {
-			font-family: Montserrat;
-			font-style: normal;
-			font-weight: 600;
-			font-size: 22px;
-			line-height: 27px;
-			color: #113E52;
-			margin-bottom: 40px;
-			margin-top: 70px;
-			@media screen and (min-width: 319px) {
-				width: 100%;
-				text-align: center;
-				margin-top: 40px;
-			}
-			@media screen and (min-width: 1365px) {
-				text-align: inherit;
-				margin-top: 70px;
-			}
-		}
 	}
 	&__table {
 		width: 50%;
