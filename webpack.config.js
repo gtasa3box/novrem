@@ -63,8 +63,8 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: './app/production-series-info.html',
       template: './app/production-series.html',
+      template: './app/production-series-info.html',
       template: './app/scopes.html',
       template: './app/index.html',
       minify: false

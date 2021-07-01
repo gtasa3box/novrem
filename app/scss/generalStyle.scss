@@ -11,29 +11,26 @@ $desktop:1200px;
 	cursor: pointer;
 	text-align: center;
 }
-.section {
-	width: 100%;
-	position: relative;
-	&__header {
-		display: flex;
-		justify-content: space-between;
-	}
-}
 
-.title {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 800;
-	font-size: 24px;
-	line-height: 29px;
-	color: #0A2A37;
-	@media screen and (min-width: 319px) {
-		text-align: center;
-		padding-top: 50px;
-	}
-	@media screen and (min-width: 666px) {
-		text-align: inherit;
-		padding-top: 70px;
+
+.section-header {
+	&__title {
+		.title {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: 800;
+			color: #0A2A37;
+			@media screen and (min-width: 319px) {
+				font-size: 22px;
+				line-height: 28px;
+				padding-top: 50px;
+			}
+			@media screen and (min-width: 666px) {
+				padding-top: 70px;
+				font-size: 28px;
+				line-height: 34px;
+			}
+		}
 	}
 	&__button {
 			justify-content: center;
@@ -62,7 +59,6 @@ $desktop:1200px;
 			}
 			&:hover {
 				background: rgba(29, 157, 211, 0.8);
-				border: 2px solid rgba(29, 157, 211, 0.5);
 				box-shadow: 0 0 5px rgba(29, 157, 211, 0.5);
 				span {
 					opacity: 1;
@@ -73,26 +69,35 @@ $desktop:1200px;
 		color: white;
 	}
 }
-.bg-blue {
-	background-color: #f8fbff;
-}
+
 .section {
-	&__wrapper {
-		max-width: 1290px;
-		margin: 0 auto;
+	width: 100%;
+	position: relative;
+	&_bg-blue {
+		background-color: #f8fbff;
+	}
+	&-header {
+		display: flex;
+		justify-content: space-between;
+	}
+	.wrapper {
 		padding-bottom: 60px;
-		@media screen and (min-width: 319px) {
-			padding-left: 20px;
-			padding-right: 20px;
-		}
-		@media screen and (min-width: 710px) {
-			padding-left: 60px;
-			padding-right: 60px;
-		}
-		@media screen and (min-width: 1365px) {
-			padding-right: 0;
-			padding-left: 0;
-		}
+	}
+}
+.wrapper {
+	max-width: 1290px;
+	margin: 0 auto;
+	@media screen and (min-width: 319px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	@media screen and (min-width: 710px) {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	@media screen and (min-width: 1365px) {
+		padding-right: 0;
+		padding-left: 0;
 	}
 }
 

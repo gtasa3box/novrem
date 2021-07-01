@@ -1,12 +1,15 @@
 .contacts {
 	background: #203A51;
-	.section__wrapper {
+	.wrapper {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-	&__title {
+	.section-header__title {
 		width: 100%;
+		.title {
+			color: white;
+		}
 	}
 	&__info {
 		font-family: Montserrat;

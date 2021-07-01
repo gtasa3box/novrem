@@ -4,4 +4,14 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
+	.content {
+		&__text {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 36px;
+			line-height: 44px;
+			color: #FFFFFF;
+		}
+	}
 }

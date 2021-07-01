@@ -1,5 +1,5 @@
 .production {
-	.card {
+	.production-card {
 		@media screen and (min-width: 319px) {
 			height: 240px;
 			width: 100%;
@@ -56,20 +56,20 @@
 			}
 		}
 		&:hover {
-			.card__info {
+			.production-card__info {
 				opacity: 1;
 				transform: translateY(0px);
 			}
 		}
 	}
-	.grid {
+	.grid_production {
 		display: flex;
 		flex-wrap: wrap;
 		margin-top: 55px;
 		@media screen and (min-width: 319px) {
 			justify-content: space-between;
 		}
-		&__item {
+		.grid__item {
 			background-size: cover;
 			margin-bottom: 30px;
 			position: relative;
@@ -78,7 +78,7 @@
 				width: 100%;
 			}
 			@media screen and (min-width: 666px) {
-				width: 45%;
+				width: 49%;
 			}
 			@media screen and (min-width: 1365px) {
 				width: inherit;

@@ -1,34 +1,7 @@
-.production__wrapper {
-	background: linear-gradient(90deg, #182B41 0%, #182B41 52.08%, rgba(24, 43, 65, 0.3) 69.79%, rgba(24, 43, 65, 0) 100%);
-	position: relative;
-}
-
 /*intro*/
 .intro_production {
 	color: white;
-	&__bg {
-		position: absolute;
-		width: 50%;
-		height: 100%;
-		right: 0;
-		top: 0;
-		background-size: cover;
-		z-index: -1;
-	}
 	.content {
-		@media screen and (min-width: 319px) {
-			padding: 70px 20px;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-		}
-		@media screen and (min-width: 768px) {
-			padding-top: 210px;
-			padding-bottom: 180px;
-		}
-		@media screen and (min-width: 1310px) {
-			padding: 237px 0 209px;
-		}
 		&__title {
 			font-family: Montserrat;
 			font-style: normal;

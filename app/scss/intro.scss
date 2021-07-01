@@ -9,15 +9,11 @@
 		@media screen and (min-width: $desktop) {
 			background-position: bottom 690px right -200px;
 		}
-	&__wrapper {
+	&__gradient {
 		background: linear-gradient(90deg, #182B41 0%, #182B41 1.08%, rgba(24, 43, 65, 0.3) 40.79%, rgba(24, 43, 65, 0) 100%);
 		position: relative;
 		@media screen and (min-width: 319px) {
-			padding: 70px 20px;
-		}
-		@media screen and (min-width: 710px) {
-			padding-left: 60px;
-			padding-right: 60px;
+			padding: 70px 0;
 		}
 		@media screen and (min-width: 768px) {
 			padding-top: 150px;
@@ -93,7 +89,6 @@
 			}
 			&:hover {
 				background: rgba(29, 157, 211, 0.8);
-				border: 2px solid rgba(29, 157, 211, 0.5);
 				box-shadow: 0 0 5px rgba(29, 157, 211, 0.5);
 				span {
 					opacity: 1;
