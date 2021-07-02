@@ -1,0 +1,98 @@
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+/*grid nav*/
+.grid_nav {
+	margin-top: 54px;
+	@media screen and (min-width: 350px) {
+		justify-content: space-around;
+	}
+	@media screen and (min-width: 666px) {
+		margin: 54px -10px 0;
+	}
+	@media screen and (min-width: 1100px) {
+		justify-content: space-between;
+	}
+	@media screen and (min-width: 1365px) {
+		justify-content: space-between;
+		margin: 54px 0 0;
+	}
+	.grid__element {
+		cursor: pointer;
+		@media screen and (min-width: 319px) {
+			width: 100%;
+			flex-grow: 1;
+		}
+		@media screen and (min-width: 666px) {
+			width: 50%;
+			padding: 0 10px;
+		}
+		@media screen and (min-width: 900px) {
+			width: (100%/3);
+		}
+		@media screen and (min-width: 1100px) {
+			flex-grow: 0;
+		}
+		@media screen and (min-width: 1365px) {
+			width: 300px;
+			flex-grow: 0;
+			padding: 0;
+		}
+	}
+}
+
+/*Production grid*/
+
+.grid_production {
+	margin-top: 55px;
+	@media screen and (min-width: 666px) {
+		margin: 55px -10px 0;
+	}
+	@media screen and (min-width: 319px) {
+		justify-content: space-between;
+	}
+	.grid__item {
+		background-size: cover;
+		margin-bottom: 30px;
+		position: relative;
+		overflow: hidden;
+		@media screen and (min-width: 319px) {
+			width: 100%;
+		}
+		@media screen and (min-width: 666px) {
+			width: 50%;
+			padding: 0 10px; 
+		}
+		@media screen and (min-width: 1365px) {
+			width: inherit;
+		}
+	}
+}
+
+/*Production-cards grid*/
+
+.production-cards__grid {
+	justify-content: space-between;
+	padding: 80px 0 0;
+	@media screen and (min-width: 319px) {
+		padding: 40px 0 0;
+	}
+	@media screen and (min-width: 666px) {
+		justify-content: space-around;
+		margin: 0 -10px;
+	}
+	@media screen and (min-width: 1030px) {
+		margin: 0 -15px;
+	}
+	@media screen and (min-width: 1365px) {
+		padding: 80px 0 0;
+		justify-content: space-between;
+	}
+}
+
+
+
+
+
+

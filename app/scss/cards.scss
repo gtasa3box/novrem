@@ -1,0 +1,219 @@
+/*Nav card */
+.nav-card {
+	width: 100%;
+	height: 186px;
+	background-size: 100%;
+	margin-bottom: 30px;
+	transition: 0.3s ease;
+	backface-visibility: hidden;
+	&:hover {
+		background-size: 120%;
+	}
+	&__wrapper {
+	background: rgba(13, 52, 78, 0.75);
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	backface-visibility: hidden;
+	padding: 0 30px;
+	}
+	&__title {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 22px;
+		line-height: 27px;
+		text-align: center;
+		color: #FFFFFF;
+		pointer-events: none;
+		user-select: none;
+	}
+}
+
+/*Production card */
+
+.production-card {
+	background-size: cover;
+	position: relative;
+	@media screen and (min-width: 319px) {
+		height: 240px;
+		width: 100%;
+	}
+	@media screen and (min-width: 1365px) {
+		width: 410px;
+		height: 272px;
+	}
+	&__series {
+		width: 146px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #18769E;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		color: #FFFFFF;
+		span {
+			pointer-events: none;
+		}
+	}
+	&__info {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100px;
+		background: rgba(13, 52, 78, 0.75);
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 140%;
+		color: #FFFFFF;
+		transition: 0.5s ease;
+		@media screen and (min-width: 319px) {
+			transform: translateY(0px);
+			opacity: 1;
+			padding: 5px 10px 0;
+		}
+		@media screen and (min-width: 1000px) {
+			padding: 16px 19px 0;
+		}
+		@media screen and (min-width: 1365px) {
+			opacity: 0;
+			transform: translateY(100px);
+		}
+		span {
+			pointer-events: none;
+		}
+	}
+	&:hover {
+		.production-card__info {
+			opacity: 1;
+			transform: translateY(0px);
+		}
+	}
+}
+
+/*Review card */
+
+.review-card {
+	height: 340px;
+	background: #FFFFFF;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	@media screen and (min-width: 319px) {
+		width: 100%;
+	}
+	@media screen and (min-width: 1365px) {
+		width: 300px;
+	}
+	&__wrapper {
+		padding: 0 10px;
+		@media screen and (min-width: 666px) {
+			padding: 0 5px;
+		}
+		@media screen and (min-width: 1365px) {
+			padding: 0;
+		}
+	}
+	&__img {
+		background-size: 100%;
+		width: 182px;
+		height: 182px;
+		margin: 0 auto;
+	}
+	&__button {
+		width: 206px;
+		height: 45px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #456D85;
+		margin: 0 auto;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 22px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		text-transform: uppercase;
+		color: white;
+		transition: 0.3s ease;
+		box-shadow: 0 0 5px rgba(29, 157, 211, 0.5);
+		&:hover {
+			background: rgba(29, 157, 211, 0.8);
+			box-shadow: 0 0 5px rgba(29, 157, 211, 0.5);
+		}
+	}
+}
+
+/*Series card */
+
+.series-card {
+		font-family: Montserrat;
+		color: #000000;
+		margin-bottom: 50px;
+		@media screen and (min-width: 319px) {
+			width: 100%;
+		}
+		@media screen and (min-width: 666px) {
+			width: 50%;
+			padding: 0 10px;
+		}
+		@media screen and (min-width: 1030px) {
+			width: (100%/3);
+			padding: 0 10px;
+		}
+		&__wrapper {
+		}
+		&__img {
+			width: 410px;
+			height: 280px;
+			background-size: 100% 100%;
+			transition: 0.3s ease;
+			cursor: pointer;
+			@media screen and (min-width: 319px) {
+				width: 100%;
+				height: 200px;
+			}
+			@media screen and (min-width: 1365px) {
+				width: 410px;
+				height: 280px;
+			}
+			&:hover {
+				background-size: 110% 110%;
+			}
+		}
+		&__title {
+			font-style: normal;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 23px;
+			display: flex;
+			align-items: center;
+			letter-spacing: -0.02em;
+			margin: 15px 0;
+		}
+		&__info {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 130%;
+			@media screen and (min-width: 319px) {
+				font-size: 14px;
+			}
+			@media screen and (min-width: 1365px) {
+				font-size: 16px;
+			}
+		}
+	}
