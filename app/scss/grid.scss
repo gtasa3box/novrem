@@ -72,7 +72,7 @@
 
 /*Production-cards grid*/
 
-.production-cards__grid {
+.grid__production-series {
 	justify-content: space-between;
 	padding: 80px 0 0;
 	@media screen and (min-width: 319px) {
@@ -88,6 +88,20 @@
 	@media screen and (min-width: 1365px) {
 		padding: 80px 0 0;
 		justify-content: space-between;
+	}
+	.grid__elem {
+		overflow: hidden;
+		@media screen and (min-width: 319px) {
+			width: 100%;
+		}
+		@media screen and (min-width: 666px) {
+			width: 50%;
+			padding: 0 10px;
+		}
+		@media screen and (min-width: 1030px) {
+			width: (100%/3);
+			padding: 0 10px;
+		}
 	}
 }
 

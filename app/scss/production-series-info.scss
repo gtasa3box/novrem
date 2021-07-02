@@ -1,6 +1,7 @@
-.info-production__wrapper {
-	background: linear-gradient(90deg, #182B41 0%, #182B41 52.08%, rgba(24, 43, 65, 0.3) 69.79%, rgba(24, 43, 65, 0) 100%);
-	position: relative;
+.production-info {
+	.wrapper {
+		padding-bottom: 140px;
+	}
 }
 .lists {
 	width: 50%;
@@ -50,7 +51,7 @@
 		margin-top: 70px;
 		@media screen and (min-width: 319px) {
 			width: 100%;
-			text-align: center;
+			text-align: left;
 			margin-top: 40px;
 		}
 		@media screen and (min-width: 666px) {
