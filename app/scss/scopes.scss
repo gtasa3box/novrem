@@ -16,6 +16,9 @@
 	}
 }
 .scopes-info {
+	&__lists {
+		width: 100%;
+	}
 	.wrapper {
 		padding-top: 75px;
 		padding-bottom: 75px;
@@ -27,7 +30,6 @@
 		font-size: 16px;
 		line-height: 140%;
 		color: #113E52;
-		max-width: 850px;
 		&:last-child {
 			margin-top: 40px;
 		}
